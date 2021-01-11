@@ -49,6 +49,10 @@ class Brand(models.Model):
 
 
 class Product(models.Model):
+    id = models.BigAutoField(
+        primary_key=True,
+        verbose_name='ID',
+    )
     name = models.CharField(
         max_length=150,
         blank=False,
@@ -134,7 +138,7 @@ class Product(models.Model):
     )
 
     def __str__(self) -> str:
-        return self.name
+        return self.name[:75]
 
     class Meta:
         verbose_name = ('product')
@@ -174,7 +178,7 @@ class Variation(models.Model):
     )
 
     def __str__(self) -> str:
-        return self.product
+        return self.product.__str__()
 
     class Meta:
         verbose_name = _('variation')
