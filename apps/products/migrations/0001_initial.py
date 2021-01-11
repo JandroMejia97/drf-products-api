@@ -34,7 +34,7 @@ class Migration(migrations.Migration):
             options={
                 'verbose_name': 'Category',
                 'verbose_name_plural': 'Categories',
-                'ordering': ('main', 'name'),
+                'ordering': ('main_id', 'name'),
             },
         ),
         migrations.CreateModel(
