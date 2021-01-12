@@ -1068,7 +1068,7 @@
 											"top": 391,
 											"width": 118.4853515625,
 											"height": 13,
-											"text": "Variantion"
+											"text": "Variation"
 										},
 										{
 											"_type": "LabelView",
@@ -2352,7 +2352,7 @@
 					"_parent": {
 						"$ref": "AAAAAAFF+qBWK6M3Z8Y="
 					},
-					"name": "Variantion",
+					"name": "Variation",
 					"attributes": [
 						{
 							"_type": "UMLAttribute",
