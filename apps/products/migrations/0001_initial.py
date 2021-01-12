@@ -41,7 +41,7 @@ class Migration(migrations.Migration):
             name='Product',
             fields=[
                 ('id', models.BigAutoField(primary_key=True, serialize=False, verbose_name='ID')),
-                ('name', models.CharField(help_text='Product name.', max_length=150, verbose_name='name')),
+                ('name', models.CharField(help_text='Product name.', max_length=350, verbose_name='name')),
                 ('current_price', models.DecimalField(decimal_places=2, help_text='Product current price.', max_digits=10, verbose_name='current price')),
                 ('raw_price', models.DecimalField(decimal_places=2, help_text='Product raw price.', max_digits=10, verbose_name='raw price')),
                 ('likes_count', models.PositiveIntegerField(blank=True, default=0, help_text='Product likes count.', verbose_name='likes count')),
@@ -63,7 +63,7 @@ class Migration(migrations.Migration):
             name='Variation',
             fields=[
                 ('id', models.AutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('color', models.CharField(blank=True, help_text='Variation color.', max_length=10, null=True, verbose_name='color')),
+                ('color', models.CharField(blank=True, help_text='Variation color.', max_length=25, null=True, verbose_name='color')),
                 ('thumbnail_url', models.URLField(blank=True, help_text='Variation thumbnail URL.', null=True, verbose_name='thumbnail URL')),
                 ('image_url', models.URLField(blank=True, help_text='Variation image URL.', null=True, verbose_name='image URL')),
                 ('product', models.ForeignKey(help_text='Product variation.', on_delete=django.db.models.deletion.CASCADE, related_name='variations', related_query_name='variation', to='products.product', verbose_name='product')),

@@ -57,7 +57,7 @@ def load_data(apps, schema_editor):
                     variation_0_image = obj['variation_0_image'] if len(obj['variation_0_image']) > 0 else None
                     Variation.objects.create(
                         product=product,
-                        color=variation_0_color,
+                        color=variation_0_color[:20],
                         thumbnail_url=variation_0_thumbnail,
                         image_url=variation_0_image,
                     )
@@ -67,7 +67,7 @@ def load_data(apps, schema_editor):
                     variation_1_image = obj['variation_1_image'] if len(obj['variation_1_image']) > 0 else None
                     Variation.objects.create(
                         product=product,
-                        color=variation_1_color,
+                        color=variation_1_color[:20],
                         thumbnail_url=variation_1_thumbnail,
                         image_url=variation_1_image,
                     )

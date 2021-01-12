@@ -54,7 +54,7 @@ class Product(models.Model):
         verbose_name='ID',
     )
     name = models.CharField(
-        max_length=150,
+        max_length=350,
         blank=False,
         null=False,
         verbose_name=_('name'),
@@ -158,7 +158,7 @@ class Variation(models.Model):
         related_query_name='variation',
     )
     color = models.CharField(
-        max_length=10,
+        max_length=20,
         blank=True,
         null=True,
         verbose_name=_('color'),
