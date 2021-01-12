@@ -13,6 +13,7 @@ https://docs.djangoproject.com/en/3.1/ref/settings/
 from pathlib import Path
 from datetime import timedelta
 from decouple import config, Csv
+from django.utils.translation import gettext_lazy as _
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -158,15 +159,28 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/3.1/topics/i18n/
 
+LANGUAGES = [
+    ('en', _('English')),
+    ('es', _('Spanish'))
+]
 LANGUAGE_CODE = 'es-ar'
-
 TIME_ZONE = 'UTC'
-
 USE_I18N = True
-
 USE_L10N = True
-
 USE_TZ = True
+
+# Cookie name. This can be whatever you want.
+SESSION_COOKIE_NAME = 'sessionId'
+
+# Settings for language cookie
+LANGUAGE_COOKIE_NAME = 'language'
+# Age of cookie, in seconds (default: 1 year).
+LANGUAGE_COOKIE_AGE = 60 * 60 * 24 * 7 * 4 * 12
+LANGUAGE_COOKIE_DOMAIN = 'drf-products-api.herokuapp.com'
+LANGUAGE_COOKIE_PATH = '/'
+LANGUAGE_COOKIE_SECURE = True
+LANGUAGE_COOKIE_HTTPONLY = True
+LANGUAGE_COOKIE_SAMESITE = 'Strict'
 
 
 # Static files (CSS, JavaScript, Images)

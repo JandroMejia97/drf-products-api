@@ -17,6 +17,7 @@ import debug_toolbar
 from django.contrib import admin
 from rest_framework import routers
 from django.urls import path, include
+from django.conf.urls.i18n import i18n_patterns
 from rest_framework_simplejwt.views import (
     token_verify,
     token_refresh,
@@ -53,3 +54,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('__debug__/', include(debug_toolbar.urls)),
 ]
+
+urlpatterns += i18n_patterns(
+    path('admin/', admin.site.urls),
+)
