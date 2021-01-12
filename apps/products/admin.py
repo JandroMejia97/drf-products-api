@@ -74,7 +74,7 @@ class VariationAdmin(admin.ModelAdmin):
     list_display_links = ('product',)
     search_fields = ('product__name',)
     fieldsets = (
-        (_('Variantion'), {
+        (_('Variation'), {
             'fields': (
                 'product',
                 'color',

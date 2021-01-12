@@ -1,0 +1,179 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-01-11 20:20-0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+#: .\apps\products\admin.py:15
+msgid "Category"
+msgstr "Categoría"
+
+#: .\apps\products\admin.py:30
+msgid "Brand"
+msgstr "Marca"
+
+#: .\apps\products\admin.py:50
+msgid "Info"
+msgstr "Información"
+
+#: .\apps\products\admin.py:61
+msgid "Price"
+msgstr "Precio"
+
+#: .\apps\products\admin.py:77
+msgid "Variation"
+msgstr "Variación"
+
+#: .\apps\products\models.py:10 .\apps\products\models.py:38
+#: .\apps\products\models.py:60
+msgid "name"
+msgstr "nombre"
+
+#: .\apps\products\models.py:11
+msgid "Category name."
+msgstr "Nombre de la categoría."
+
+#: .\apps\products\models.py:18
+msgid "main category"
+msgstr "categoría principal"
+
+#: .\apps\products\models.py:19
+msgid "Main category"
+msgstr "categoría principal"
+
+#: .\apps\products\models.py:39
+msgid "Brand name."
+msgstr "Nombre de la marca."
+
+#: .\apps\products\models.py:61
+msgid "Product name."
+msgstr "Nombre del producto."
+
+#: .\apps\products\models.py:68
+msgid "brand"
+msgstr "marca"
+
+#: .\apps\products\models.py:69
+msgid "Product brand."
+msgstr "Marca del producto."
+
+#: .\apps\products\models.py:78
+msgid "category"
+msgstr "categoría"
+
+#: .\apps\products\models.py:79
+msgid "Product category."
+msgstr "Categoría del producto."
+
+#: .\apps\products\models.py:88
+msgid "current price"
+msgstr "precio actual"
+
+#: .\apps\products\models.py:89
+msgid "Product current price."
+msgstr "Precio actual del producto."
+
+#: .\apps\products\models.py:96
+msgid "raw price"
+msgstr "precio bruto"
+
+#: .\apps\products\models.py:97
+msgid "Product raw price."
+msgstr "Precio bruto del producto."
+
+#: .\apps\products\models.py:103
+msgid "likes count"
+msgstr "cantidad de \"me gusta\""
+
+#: .\apps\products\models.py:104
+msgid "Product likes count."
+msgstr "Cantidad de \"me gusta\" del producto."
+
+#: .\apps\products\models.py:110
+msgid "discount"
+msgstr "descuento"
+
+#: .\apps\products\models.py:111
+msgid "Product discount."
+msgstr "Descuento del producto."
+
+#: .\apps\products\models.py:117
+msgid "is new?"
+msgstr "¿es nuevo?"
+
+#: .\apps\products\models.py:118
+msgid "Is the product new?"
+msgstr "¿El producto es nuevo?"
+
+#: .\apps\products\models.py:124
+msgid "model"
+msgstr "modelo"
+
+#: .\apps\products\models.py:125
+msgid "Product model."
+msgstr "Modelo del producto."
+
+#: .\apps\products\models.py:130
+msgid "URL"
+msgstr "URL"
+
+#: .\apps\products\models.py:131
+msgid "Product URL."
+msgstr "URL del producto."
+
+#: .\apps\products\models.py:136 .\apps\products\models.py:176
+msgid "image URL"
+msgstr "URL de la imagen"
+
+#: .\apps\products\models.py:137
+msgid "Product image URL."
+msgstr "URL de la imagen del producto."
+
+#: .\apps\products\models.py:155
+msgid "product"
+msgstr "producto"
+
+#: .\apps\products\models.py:156
+msgid "Product variation."
+msgstr "Variante del producto."
+
+#: .\apps\products\models.py:164
+msgid "color"
+msgstr "color"
+
+#: .\apps\products\models.py:165
+msgid "Variation color."
+msgstr "Color de la variante."
+
+#: .\apps\products\models.py:170
+msgid "thumbnail URL"
+msgstr "URL de la miniatura."
+
+#: .\apps\products\models.py:171
+msgid "Variation thumbnail URL."
+msgstr "URL de la miniatura de la variante."
+
+#: .\apps\products\models.py:177
+msgid "Variation image URL."
+msgstr "URL de la imagen de la variante."
+
+#: .\apps\products\models.py:184
+msgid "variation"
+msgstr "variante"
+
+#: .\apps\products\models.py:185
+msgid "variations"
+msgstr "variantes"
