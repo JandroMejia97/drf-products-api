@@ -1,2 +1,2 @@
 # PRODUCTS - API REST
-API REST created for manage products, with JWT Authentication.
+REST API created for the management of products, categories and brands, with JWT authentication.
