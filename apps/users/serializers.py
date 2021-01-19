@@ -35,8 +35,8 @@ class UserSerializer(ModelSerializer):
             current_user = request.user
         if (not current_user.is_authenticated 
             or not getattr(current_user, 'is_superuser', False)):
-            self.validated_data.pop('is_superuser')
-            self.validated_data.pop('is_staff')
+            self.validated_data['is_superuser'] = False
+            self.validated_data['is_staff'] = False
         return super(UserSerializer, self).save(**kwargs)
 
     def create(self, validated_data):

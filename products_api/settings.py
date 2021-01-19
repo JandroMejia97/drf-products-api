@@ -123,7 +123,7 @@ SIMPLE_JWT = {
 
 # Django CORS Middleware
 # https://github.com/zestedesavoir/django-cors-middleware
-CORS_ORIGIN_WHITELIST = config('CORS_ORIGIN_WHITELIST', default='localhost:8100', cast=Csv())
+CORS_ORIGIN_WHITELIST = config('CORS_ORIGIN_WHITELIST', default='localhost:4200', cast=Csv())
 
 WSGI_APPLICATION = 'products_api.wsgi.application'
 
@@ -165,7 +165,7 @@ LANGUAGES = [
     ('en', _('English')),
     ('es', _('Spanish'))
 ]
-LANGUAGE_CODE = 'es-ar'
+LANGUAGE_CODE = 'es-AR'
 TIME_ZONE = 'UTC'
 USE_I18N = True
 USE_L10N = True
