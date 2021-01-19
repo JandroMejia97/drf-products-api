@@ -117,6 +117,8 @@ SIMPLE_JWT = {
     'REFRESH_TOKEN_LIFETIME': timedelta(days=3),
     'ROTATE_REFRESH_TOKENS': True,
     'UPDATE_LAST_LOGIN': True,
+    'USER_ID_CLAIM': 'userId',
+    'TOKEN_TYPE_CLAIM': 'tokenType'
 }
 
 # Django CORS Middleware
