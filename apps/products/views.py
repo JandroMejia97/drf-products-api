@@ -9,6 +9,7 @@ class BrandViewSet(viewsets.ModelViewSet):
     queryset = Brand.objects.all()
     search_fields = ('name',)
     serializer_class = BrandSerializer
+    page_size_query_param = 'page_size'
 
 
 class CategoryViewSet(viewsets.ModelViewSet):
@@ -18,6 +19,7 @@ class CategoryViewSet(viewsets.ModelViewSet):
     filterset_fields = ('main',)
     search_fields = ('name',)
     serializer_class = CategorySerializer
+    page_size_query_param = 'page_size'
 
 
 class ProductViewSet(viewsets.ModelViewSet):
@@ -30,6 +32,7 @@ class ProductViewSet(viewsets.ModelViewSet):
     filterset_fields = ('brand', 'category',)
     search_fields = ('name', 'category__name', 'brand__name',)
     serializer_class = ProductSerializer
+    page_size_query_param = 'page_size'
 
 
 class VariationViewSet(viewsets.ModelViewSet):
@@ -37,3 +40,4 @@ class VariationViewSet(viewsets.ModelViewSet):
     filterset_fields = ('product',)
     search_fields = ('product__name',)
     serializer_class = VariationSerializer
+    page_size_query_param = 'page_size'
