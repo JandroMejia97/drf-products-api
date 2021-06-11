@@ -27,9 +27,13 @@ class ProductViewSet(viewsets.ModelViewSet):
     ).prefetch_related(
         'variations'
     )
-    filterset_fields = ('brand', 'category',)
+    filterset_fields = ('brand', 'category', 'model',)
     search_fields = ('name', 'category__name', 'brand__name',)
-    serializer_class = ProductSerializer
+
+    def get_serializer_class(self):
+        if self.action == 'list':
+            return ProductListSerializer
+        return ProductSerializer
 
 
 class VariationViewSet(viewsets.ModelViewSet):

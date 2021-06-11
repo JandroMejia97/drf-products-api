@@ -10,7 +10,6 @@ class BrandSerializer(serializers.ModelSerializer):
         fields = ('__all__')
 
 
-
 class CategorySerializer(serializers.ModelSerializer):
 
     class Meta:
@@ -25,9 +24,16 @@ class VariationSerializer(serializers.ModelSerializer):
         fields = ('__all__')
 
 
-class ProductSerializer(serializers.ModelSerializer):
-    brand = BrandSerializer(many=False)
+class ProductListSerializer(serializers.ModelSerializer):
     category = CategorySerializer(many=False)
+    brand = BrandSerializer(many=False)
+
+    class Meta:
+        model = Product
+        exclude = ('likes_count', 'discount', 'is_new', 'url',)
+
+
+class ProductSerializer(ProductListSerializer):
     variations = VariationSerializer(many=True)
 
     class Meta:
