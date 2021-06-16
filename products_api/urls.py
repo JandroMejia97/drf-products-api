@@ -55,7 +55,6 @@ urlpatterns = [
     path('api/token/', token_obtain_pair, name='token_obtain_pair'),
     path('api/token/verify/', token_verify, name='token_verify'),
     path('api/token/refresh/', token_refresh, name='token_refresh'),
-    path('admin/', admin.site.urls),
     path('__debug__/', include(debug_toolbar.urls)),
 ]
 
